@@ -4,11 +4,11 @@ using ElectronicShopStoreApp._3_Other.LogExtension;
 
 namespace ElectronicShopStoreApp._2_UI
 {
-    public class UserCommunicationProvider : IUserCommunicationProvider
+    public class LogicAndCommunicationProvider : ILogicAndCommunicationProvider
     {
         private readonly ElectronicShopStoreDbContext _mainDbContex;
 
-        public UserCommunicationProvider(ElectronicShopStoreDbContext mainDbContex)
+        public LogicAndCommunicationProvider(ElectronicShopStoreDbContext mainDbContex)
         {
             _mainDbContex = mainDbContex;
         }

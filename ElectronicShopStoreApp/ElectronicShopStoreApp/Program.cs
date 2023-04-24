@@ -8,15 +8,9 @@ using Microsoft.Extensions.DependencyInjection;
 var services = new ServiceCollection();
 
 services.AddSingleton<IApp, App>();
-services.AddSingleton<IUserCommunicationProvider, UserCommunicationProvider>();
+services.AddSingleton<ILogicAndCommunicationProvider, LogicAndCommunicationProvider>();
 
 var fileWithSqlDatabaseAddress = FileAddressesManager.fileAddress_database_address;
-if (!File.Exists(fileWithSqlDatabaseAddress))
-{
-    Console.WriteLine("Błąd: nie znaleziono pliku z adresem bazy danych");
-    return -1;
-}
-
 string mainDatabaseAddress = GetSqlDatabaseConnectionString(fileWithSqlDatabaseAddress);
 services.AddDbContext<ElectronicShopStoreDbContext>(options => options.UseSqlServer(mainDatabaseAddress));
 
@@ -26,6 +20,7 @@ var app = serviceProvider.GetService<IApp>();
 app.Run();
 
 return 0;
+
 
 static string GetSqlDatabaseConnectionString(string fileWithSqlDatabaseAddress)
 {

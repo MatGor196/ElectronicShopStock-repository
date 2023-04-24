@@ -8,13 +8,13 @@ namespace ElectronicShopStoreApp
     public class App : IApp
     {
         private readonly ElectronicShopStoreDbContext _mainDbContext;
-        private readonly IUserCommunicationProvider _userCommunicationProvider;
+        private readonly ILogicAndCommunicationProvider _logicAndCommunicationProvider;
         public App(ElectronicShopStoreDbContext mainDbContext,
-                   IUserCommunicationProvider userCommunicationProvider) 
+                   ILogicAndCommunicationProvider userCommunicationProvider) 
         {
             _mainDbContext = mainDbContext;
             _mainDbContext.Database.EnsureCreated();
-            _userCommunicationProvider = userCommunicationProvider;
+            _logicAndCommunicationProvider = userCommunicationProvider;
         }
         private void DisplayBeginningMenu()
         {
@@ -48,19 +48,19 @@ namespace ElectronicShopStoreApp
                     switch (userInput)
                     {
                         case 1:
-                            _userCommunicationProvider.ShowAllItems_MenuMethod();
+                            _logicAndCommunicationProvider.ShowAllItems_MenuMethod();
                             break;
                         case 2:
-                            _userCommunicationProvider.ShowAllItemsByCriteria_MenuMethod();
+                            _logicAndCommunicationProvider.ShowAllItemsByCriteria_MenuMethod();
                             break;
                         case 3:
-                            _userCommunicationProvider.AddItems_MenuMethod();
+                            _logicAndCommunicationProvider.AddItems_MenuMethod();
                             break;
                         case 4:
-                            _userCommunicationProvider.RemoveItems_MenuMethod();
+                            _logicAndCommunicationProvider.RemoveItems_MenuMethod();
                             break;
                         case 5:
-                            _userCommunicationProvider.ChangeModelsOfItems_MenuMethod();
+                            _logicAndCommunicationProvider.ChangeModelsOfItems_MenuMethod();
                             break;
                         case 6:
                             appRun = false;

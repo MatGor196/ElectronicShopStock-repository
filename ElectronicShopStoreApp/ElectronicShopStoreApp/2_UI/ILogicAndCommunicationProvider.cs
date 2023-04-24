@@ -1,7 +1,7 @@
 ﻿
 namespace ElectronicShopStoreApp._2_UI
 {
-    public interface IUserCommunicationProvider
+    public interface ILogicAndCommunicationProvider
     {
         void ShowAllItems_MenuMethod();
         void ShowAllItemsByCriteria_MenuMethod();
