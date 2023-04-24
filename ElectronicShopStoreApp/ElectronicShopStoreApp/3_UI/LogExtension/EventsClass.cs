@@ -3,7 +3,7 @@ namespace ElectronicShopStoreApp._2_ApplicationServices.LogExtension
 {
     public static class EventsClass
     {
-        private static readonly string _eventLogFileAddress = "C:\\Users\\user\\Desktop\\Projekty_C#\\MatGor196\\ElectronicShopStore-repository\\ElectronicShopStoreApp\\ElectronicShopStoreApp\\1_DataAccess\\Files\\event_log.txt";
+        private static readonly string _eventLogFileAddress = "C:\\Users\\user\\Desktop\\Programowanie\\GitHub\\ElectronicShopStore\\ElectronicShopStoreApp\\ElectronicShopStoreApp\\1_DataAccess\\Files\\event_log.txt";
 
         public static void SaveAddingOfItemToEventLog(string model)
         {

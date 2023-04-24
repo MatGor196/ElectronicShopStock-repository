@@ -35,7 +35,7 @@ namespace ElectronicShopStoreApp
 
         public void Run()
         {
-            //SaveStandardDevicesToSqlDatabase();
+            //SaveStandardDevicesToSqlDatabase(); // <- uruchomić jeśli chcemy dodać przykładowe urządzenia
 
             bool appRun = true;
             while(appRun)
@@ -75,7 +75,7 @@ namespace ElectronicShopStoreApp
         private void SaveStandardDevicesToSqlDatabase()
         {
             var csvReader = new CsvReader();
-            var modelsCsvFileAddress = "C:\\Users\\user\\Desktop\\Projekty_C#\\MatGor196\\ElectronicShopStore-repository\\ElectronicShopStoreApp\\ElectronicShopStoreApp\\1_DataAccess\\Files\\devices_models.csv";
+            var modelsCsvFileAddress = "C:\\Users\\user\\Desktop\\Programowanie\\GitHub\\ElectronicShopStore\\ElectronicShopStoreApp\\ElectronicShopStoreApp\\1_DataAccess\\Files\\devices_models.csv";
             var devices = csvReader.ProcessElectronicDevices(modelsCsvFileAddress);
 
             foreach (var device in devices)

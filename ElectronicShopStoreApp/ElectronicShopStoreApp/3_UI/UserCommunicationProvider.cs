@@ -1,6 +1,5 @@
 ﻿using ElectronicShopStoreApp._1_DataAccess;
 using ElectronicShopStoreApp._1_DataAccess.Entities;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 using ElectronicShopStoreApp._2_ApplicationServices.LogExtension;
 
 namespace ElectronicShopStoreApp._3_UI

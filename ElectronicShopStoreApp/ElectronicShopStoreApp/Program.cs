@@ -9,7 +9,7 @@ var services = new ServiceCollection();
 services.AddSingleton<IApp, App>();
 services.AddSingleton<IUserCommunicationProvider, UserCommunicationProvider>();
 
-var fileWithSqlDatabaseAddress = "C:\\Users\\user\\Desktop\\Projekty_C#\\MatGor196\\ElectronicShopStore-repository\\ElectronicShopStoreApp\\ElectronicShopStoreApp\\1_DataAccess\\Files\\database_address.txt";
+var fileWithSqlDatabaseAddress = "C:\\Users\\user\\Desktop\\Programowanie\\GitHub\\ElectronicShopStore\\ElectronicShopStoreApp\\ElectronicShopStoreApp\\1_DataAccess\\Files\\database_address.txt";
 if (!File.Exists(fileWithSqlDatabaseAddress))
 {
     Console.WriteLine("Błąd: nie znaleziono pliku z adresem bazy danych");
