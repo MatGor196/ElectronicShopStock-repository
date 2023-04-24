@@ -1,1 +1,1 @@
-Data Source=MOJ-LAPTOP;Initial Catalog=ElectronicShopStoreDatabase;Integrated Security=True;Encrypt=False
+Data Source=MOJ-LAPTOP;Initial Catalog=ElectronicShopStoreDb;Integrated Security=True;Encrypt=False

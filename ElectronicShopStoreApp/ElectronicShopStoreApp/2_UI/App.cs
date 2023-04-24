@@ -36,7 +36,7 @@ namespace ElectronicShopStoreApp
 
         public void Run()
         {
-            //SaveStandardDevicesToSqlDatabase(); // <- uruchomić jeśli chcemy dodać przykładowe urządzenia
+            //SaveStandardDevicesToSqlDatabase(); // <- uruchomić apkę z tym, jeśli chcemy dodać przykładowe urządzenia
 
             bool appRun = true;
             while(appRun)
