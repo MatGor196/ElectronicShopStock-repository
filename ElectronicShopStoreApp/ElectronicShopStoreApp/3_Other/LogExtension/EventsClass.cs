@@ -1,9 +1,10 @@
-﻿
-namespace ElectronicShopStoreApp._2_ApplicationServices.LogExtension
+﻿using ElectronicShopStoreApp._3_Other.FileAddressesExtension;
+
+namespace ElectronicShopStoreApp._3_Other.LogExtension
 {
     public static class EventsClass
     {
-        private static readonly string _eventLogFileAddress = "C:\\Users\\user\\Desktop\\Programowanie\\GitHub\\ElectronicShopStore\\ElectronicShopStoreApp\\ElectronicShopStoreApp\\1_DataAccess\\Files\\event_log.txt";
+        private static readonly string _eventLogFileAddress = FileAddressesManager.fileAddress_event_log;
 
         public static void SaveAddingOfItemToEventLog(string model)
         {

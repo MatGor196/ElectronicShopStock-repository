@@ -1,5 +1,5 @@
 ﻿
-namespace ElectronicShopStoreApp._3_UI
+namespace ElectronicShopStoreApp._2_UI
 {
     public interface IUserCommunicationProvider
     {

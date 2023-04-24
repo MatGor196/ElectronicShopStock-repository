@@ -1,6 +1,7 @@
 ﻿using ElectronicShopStoreApp;
 using ElectronicShopStoreApp._1_DataAccess;
-using ElectronicShopStoreApp._3_UI;
+using ElectronicShopStoreApp._2_UI;
+using ElectronicShopStoreApp._3_Other.FileAddressesExtension;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -9,7 +10,7 @@ var services = new ServiceCollection();
 services.AddSingleton<IApp, App>();
 services.AddSingleton<IUserCommunicationProvider, UserCommunicationProvider>();
 
-var fileWithSqlDatabaseAddress = "C:\\Users\\user\\Desktop\\Programowanie\\GitHub\\ElectronicShopStore\\ElectronicShopStoreApp\\ElectronicShopStoreApp\\1_DataAccess\\Files\\database_address.txt";
+var fileWithSqlDatabaseAddress = FileAddressesManager.fileAddress_database_address;
 if (!File.Exists(fileWithSqlDatabaseAddress))
 {
     Console.WriteLine("Błąd: nie znaleziono pliku z adresem bazy danych");
@@ -37,5 +38,3 @@ static string GetSqlDatabaseConnectionString(string fileWithSqlDatabaseAddress)
 
     return address;
 }
-
-//Data Source=SOURCE_SERVER;Initial Catalog=ElectronicShopStoreDatabase;Integrated Security=True;Encrypt=False

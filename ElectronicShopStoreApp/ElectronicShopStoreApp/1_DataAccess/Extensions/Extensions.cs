@@ -1,6 +1,5 @@
 ﻿
 using ElectronicShopStoreApp._1_DataAccess.Entities;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 namespace ElectronicShopStoreApp._1_DataAccess.DataProviders.Extensions
 {

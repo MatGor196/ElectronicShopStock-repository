@@ -1,6 +1,7 @@
 ﻿using ElectronicShopStoreApp._1_DataAccess;
 using ElectronicShopStoreApp._1_DataAccess.DataProviders;
-using ElectronicShopStoreApp._3_UI;
+using ElectronicShopStoreApp._2_UI;
+using ElectronicShopStoreApp._3_Other.FileAddressesExtension;
 
 namespace ElectronicShopStoreApp
 {
@@ -75,7 +76,7 @@ namespace ElectronicShopStoreApp
         private void SaveStandardDevicesToSqlDatabase()
         {
             var csvReader = new CsvReader();
-            var modelsCsvFileAddress = "C:\\Users\\user\\Desktop\\Programowanie\\GitHub\\ElectronicShopStore\\ElectronicShopStoreApp\\ElectronicShopStoreApp\\1_DataAccess\\Files\\devices_models.csv";
+            var modelsCsvFileAddress = FileAddressesManager.fileAddress_devices_models;
             var devices = csvReader.ProcessElectronicDevices(modelsCsvFileAddress);
 
             foreach (var device in devices)

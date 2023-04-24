@@ -1,8 +1,8 @@
 ﻿using ElectronicShopStoreApp._1_DataAccess;
 using ElectronicShopStoreApp._1_DataAccess.Entities;
-using ElectronicShopStoreApp._2_ApplicationServices.LogExtension;
+using ElectronicShopStoreApp._3_Other.LogExtension;
 
-namespace ElectronicShopStoreApp._3_UI
+namespace ElectronicShopStoreApp._2_UI
 {
     public class UserCommunicationProvider : IUserCommunicationProvider
     {
