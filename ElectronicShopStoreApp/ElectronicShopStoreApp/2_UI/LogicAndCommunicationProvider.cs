@@ -56,7 +56,7 @@ namespace ElectronicShopStoreApp._2_UI
                         break;
                     case 5:
                         SeeDevicesWithPriceBiggerThan();
-                        break; 
+                        break;
                     case 6:
                         break;
                     default:

@@ -1,5 +1,4 @@
-﻿
-namespace ElectronicShopStoreApp._3_Other.FileAddressesExtension
+﻿namespace ElectronicShopStoreApp._3_Other.FileAddressesExtension
 {
     public static class FileAddressesManager
     {

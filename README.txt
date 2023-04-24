@@ -17,4 +17,4 @@ Głównia logika aplikacji zawarta jest w App.Run(), która wywołuje metody z w
 
 Operuje ona na modelach urządzeń elektronicznych, których najważniejszym parametrem jest ilość urządzeń danego modelu w magazynie (InStock). Można tą ilość zmieniać jak również prosto takowe filtrować np. po innych parametrach. Kiedy w magazynie pojawi się nowe urządzenie (typ urządzenia też jest parametrem, to nie musi być np. Laptop), aplikacja oferuje możliwość dodania jego modelu.
 
-Zawiera metody LINQ, proste walidacje i przykładowy test jednostkowy.
+Zawiera także metody LINQ oraz proste walidacje.
