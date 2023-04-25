@@ -10,11 +10,11 @@ namespace ElectronicShopStoreApp
         private readonly ElectronicShopStoreDbContext _mainDbContext;
         private readonly ILogicAndCommunicationProvider _logicAndCommunicationProvider;
         public App(ElectronicShopStoreDbContext mainDbContext,
-                   ILogicAndCommunicationProvider userCommunicationProvider) 
+                   ILogicAndCommunicationProvider logicAndCommunicationProvider) 
         {
             _mainDbContext = mainDbContext;
             _mainDbContext.Database.EnsureCreated();
-            _logicAndCommunicationProvider = userCommunicationProvider;
+            _logicAndCommunicationProvider = logicAndCommunicationProvider;
         }
         private void DisplayBeginningMenu()
         {

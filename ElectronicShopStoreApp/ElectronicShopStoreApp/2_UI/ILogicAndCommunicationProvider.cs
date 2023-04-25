@@ -8,5 +8,7 @@ namespace ElectronicShopStoreApp._2_UI
         void AddItems_MenuMethod();
         void RemoveItems_MenuMethod();
         void ChangeModelsOfItems_MenuMethod();
+
+        int Add(int x, int y);
     }
 }

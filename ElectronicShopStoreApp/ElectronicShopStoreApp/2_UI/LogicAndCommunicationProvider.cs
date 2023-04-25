@@ -358,5 +358,10 @@ namespace ElectronicShopStoreApp._2_UI
 
             Console.ReadLine();
         }
+
+        //Na potrzeby zabawy testami. Zignorować
+        public int Add(int x, int y) => x + y;
+
+        private int PrivateAdd(int x, int y) => x + y;
     }
 }
